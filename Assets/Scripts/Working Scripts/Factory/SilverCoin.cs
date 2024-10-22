@@ -7,7 +7,7 @@ public class SilverCoin : BaseCoin
 
     public SilverCoin(int value, GameObject prefab) : base(value, prefab)
     {
-       
+       //template for future prefab
     }
 
     // Start is called before the first frame update

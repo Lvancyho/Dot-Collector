@@ -5,7 +5,7 @@ using UnityEngine;
 public class CoinSpawner : MonoBehaviour
 {
 
-    // Our singleton
+    // another singleton but also part of my factory
     public List<BaseCoin> coins = new List<BaseCoin>(); // Prefab for the coins
     public float spawnInterval = 2f; // Time interval between spawns
     public float spawnRangeX = 8f;    // Range for spawning on the X-axis
@@ -22,6 +22,8 @@ public class CoinSpawner : MonoBehaviour
             Destroy(this);
         }
         instance = this;
+
+        //this is the singleton part
     }
 
     private void SpawnCoin()

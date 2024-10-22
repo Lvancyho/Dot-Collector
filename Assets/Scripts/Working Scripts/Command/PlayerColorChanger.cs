@@ -8,6 +8,8 @@ public class PlayerColorChanger : MonoBehaviour
     public Button blueButton;
     public SpriteRenderer playerRenderer;
 
+    //makes it so buttons change player color
+
     // Start is called before the first frame update
     void Start()
     {
