@@ -22,4 +22,6 @@ public abstract class Subject : MonoBehaviour
             observer.Notify(this);
         }
     }
+
+    //doesnt work idk bro. its supposed to be able to attach and listen to observers and in this case that would be the score system. when a coin is picked up, the score system is listening for the player to pick coins up.
 }
