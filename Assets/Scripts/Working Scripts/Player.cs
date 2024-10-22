@@ -2,21 +2,19 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Speed at which the player will move
+    public float moveSpeed = 5f; //speed for player
 
     private Rigidbody2D rb;
 
     void Start()
     {
-        // Get the Rigidbody2D component
         rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        // Get input from the user
-        float moveX = Input.GetAxis("Horizontal"); // Left/Right movement (A/D or Left/Right arrows)
-        float moveY = Input.GetAxis("Vertical");   // Up/Down movement (W/S or Up/Down arrows)
+        float moveX = Input.GetAxis("Horizontal"); //left right
+        float moveY = Input.GetAxis("Vertical");   //up down
 
         // Create a movement vector
         Vector2 movement = new Vector2(moveX, moveY).normalized * moveSpeed;
