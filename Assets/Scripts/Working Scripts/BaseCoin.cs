@@ -37,6 +37,8 @@ public class BaseCoin : MonoBehaviour
             {
                 collector.CollectCoin(); // Call the method to collect the coin
             }
+
+            GameManager.Instance.AddToScore(moneyValue);
             Destroy(gameObject); // Destroy the coin
         }
     }
