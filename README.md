@@ -11,4 +11,4 @@ Command was implemented to change the players color. At the beginning of the gam
 
 Dot Collector is a 2D game where a player controls a dot and they have to collect coins around the map that spawn randomly to get the highest score possible while avoiding obstacles. 
 
-The interactive media scenario that I have made is a 2D 
+The interactive media scenario that I have made is a 2D survival game where a player must try their best to collect as many coins before running into obstacles that will kill them upon collision. I made this project to deliver the assignment's deliverables and help improve my skills with game engine designs. 
