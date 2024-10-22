@@ -9,10 +9,10 @@ public class CoinSpawner : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating(nameof(SpawnCircle), 0f, spawnInterval); // Start spawning circles
+        InvokeRepeating(nameof(SpawnCoin), 0f, spawnInterval); // Start spawning circles
     }
 
-    private void SpawnCircle()
+    private void SpawnCoin()
     {
         // Generate a random position within the specified range
         Vector2 spawnPosition = new Vector2(Random.Range(-spawnRangeX, spawnRangeX), Random.Range(-spawnRangeY, spawnRangeY));
