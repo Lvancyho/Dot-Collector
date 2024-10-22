@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6491900671853009182}
   - component: {fileID: 5272166906394601369}
   - component: {fileID: 2315227994037979499}
-  - component: {fileID: -8768472615880099053}
+  - component: {fileID: 3010145145040458594}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Golden Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,7 +102,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &-8768472615880099053
+--- !u!114 &3010145145040458594
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,6 +111,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5300418020859735660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ee4a2ca77e2d034384d0fd7c67b3d57, type: 3}
+  m_Script: {fileID: 11500000, guid: 33a1397079c8318409159d9c5063a485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moneyValue: 10
+  Type: Gold
+  coinPrefab: {fileID: 5300418020859735660}

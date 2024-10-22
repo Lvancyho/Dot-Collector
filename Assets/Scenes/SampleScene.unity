@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 960174515}
   - component: {fileID: 960174516}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: Game Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -431,10 +431,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f51fcc85a2227a344aaeb1218367b475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinPrefab: {fileID: 5300418020859735660, guid: c1abc5c977681324494845977eb279b2, type: 3}
+  coins:
+  - {fileID: 3010145145040458594, guid: c1abc5c977681324494845977eb279b2, type: 3}
+  - {fileID: 8194864702541302596, guid: dc14c5657977b0142a6b134ea99e71ff, type: 3}
   spawnInterval: 2
   spawnRangeX: 8
   spawnRangeY: 4
+  instance: {fileID: 0}
 --- !u!114 &1881538904
 MonoBehaviour:
   m_ObjectHideFlags: 0

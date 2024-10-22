@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GoldCoin : BaseCoin
 {
-    public static GameManager Instance;
+
+    public GoldCoin(int value, GameObject prefab) : base(value, prefab)
+    {
+       
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        if (Instance != this && Instance != null)
-        {
-            Destroy(this);
-        }
-        Instance = this;
+        
     }
-
+    
     // Update is called once per frame
     void Update()
     {
