@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CoinCollector : MonoBehaviour
 {
-    private int coinCount = 0; // Count of collected circles
+    private int coinCount = 0; // Count of collected coins
 
     // Call this method to collect a coin
     public void CollectCoin()

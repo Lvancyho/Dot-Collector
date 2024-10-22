@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Speed at which the circle will move
+    public float moveSpeed = 5f; // Speed at which the player will move
 
     private Rigidbody2D rb;
 
@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
         // Create a movement vector
         Vector2 movement = new Vector2(moveX, moveY).normalized * moveSpeed;
 
-        // Move the circle
+        // Move the player
         rb.velocity = movement;
     }
 }
