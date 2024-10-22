@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseCoin : MonoBehaviour
+public class BaseCoin : Subject
 {
     public int moneyValue;
     public string Type = "";
@@ -14,16 +14,20 @@ public class BaseCoin : MonoBehaviour
         coinPrefab = prefab;
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnEnable()
     {
-        
+        if(GameManager.Instance)
+        {
+            //Attach(GameManager.Instance);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        if(GameManager.Instance)
+        {
+            //Detach(GameManager.Instance);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -39,6 +43,7 @@ public class BaseCoin : MonoBehaviour
             }
 
             GameManager.Instance.AddToScore(moneyValue);
+            //NotifyObservers();
             Destroy(gameObject); // Destroy the coin
         }
     }

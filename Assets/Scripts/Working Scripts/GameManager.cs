@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Observer
 {
     public static GameManager Instance;
 
@@ -19,18 +19,24 @@ public class GameManager : MonoBehaviour
         }
         Instance = this;
 
-        score.text = "000";
+        score.text = "0";
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void AddToScore(int val)
     {
         currentScore += val;
+        score.text = $"{currentScore}";
+    }
+
+    public override void Notify(Subject subject)
+    {
+        currentScore += subject.GetComponent<BaseCoin>().moneyValue;
         score.text = $"{currentScore}";
     }
 }

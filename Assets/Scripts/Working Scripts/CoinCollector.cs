@@ -7,7 +7,8 @@ public class CoinCollector : MonoBehaviour
     // Call this method to collect a coin
     public void CollectCoin()
     {
-        coinCount++; // Increment the count
-        Debug.Log("Coins Collected: " + coinCount); // Display the count in the console
+        
+        /*coinCount++; // Increment the count
+        Debug.Log("Coins Collected: " + coinCount); // Display the count in the console*/
     }
 }
