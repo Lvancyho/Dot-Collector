@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class CoinSpawner : MonoBehaviour
 {
+
+    // Our singleton
     public GameObject coinPrefab; // Prefab for the yellow coin
     public float spawnInterval = 2f; // Time interval between spawns
     public float spawnRangeX = 8f;    // Range for spawning on the X-axis
@@ -9,14 +11,14 @@ public class CoinSpawner : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating(nameof(SpawnCoin), 0f, spawnInterval); // Start spawning circles
+        InvokeRepeating(nameof(SpawnCoin), 0f, spawnInterval); // Start spawning coins
     }
 
     private void SpawnCoin()
     {
         // Generate a random position within the specified range
         Vector2 spawnPosition = new Vector2(Random.Range(-spawnRangeX, spawnRangeX), Random.Range(-spawnRangeY, spawnRangeY));
-        // Instantiate the yellow circle at the random position
+        // Instantiate the yellow coins at the random position
         Instantiate(coinPrefab, spawnPosition, Quaternion.identity);
     }
 }
