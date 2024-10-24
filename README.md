@@ -34,10 +34,10 @@ Interactive media scenario information:
 Dot Collector is a 2D game where a player controls a dot and they have to collect coins around the map that spawn randomly to get the highest score possible while avoiding obstacles. I made this project to deliver the assignment's deliverables and help improve my skills with game engine design patterns. The player is expected to collect as many coins as possible before dying. The player can use WASD to move.
 
 Project Management Tools:
-https://docs.google.com/spreadsheets/d/1pROi6e8mVZiwnq9uwCtwJDRuuSgdIEAuEwlyYeTJ5BU/edit?usp=sharing Viewable by all Ontario Tech accounts
+https://docs.google.com/spreadsheets/d/1pROi6e8mVZiwnq9uwCtwJDRuuSgdIEAuEwlyYeTJ5BU/edit?usp=sharing Viewable by all Ontario Tech accounts.
 
 Game Demo Video:
 https://drive.google.com/file/d/1QWVA4q5zIsbR3a-jzDf4e7RXQd1_sLiC/view?usp=sharing Viewable by all Ontario Tech accounts.
 
 Assignment 1 Video Report:
-https://drive.google.com/file/d/1A-ZsYCnzmUd5rq5wdsOrsZiP9BvBoyOl/view?usp=sharing
+https://drive.google.com/file/d/1A-ZsYCnzmUd5rq5wdsOrsZiP9BvBoyOl/view?usp=sharing Viewable by all Ontario Tech accounts.
