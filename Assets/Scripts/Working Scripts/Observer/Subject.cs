@@ -11,10 +11,14 @@ public abstract class Subject : MonoBehaviour
     {
         _observers.Add(observer);
     }
+
+    //adds observers to the list
     protected void Detach(Observer observer)
     {
         _observers.Remove(observer);
     }
+
+    //removes observers from the list
     protected void NotifyObservers()
     {
         foreach (Observer observer in _observers)
@@ -23,5 +27,7 @@ public abstract class Subject : MonoBehaviour
         }
     }
 
-    //doesnt work idk bro. its supposed to be able to attach and listen to observers and in this case that would be the score system. when a coin is picked up, the score system is listening for the player to pick coins up.
+    //notifies observers in the list
+
+    //when a coin is picked up, the score system is listening for the player to pick coins up.
 }

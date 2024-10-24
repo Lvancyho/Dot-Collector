@@ -6,7 +6,7 @@ public class CoinSpawner : MonoBehaviour
 {
 
     // another singleton but also part of my factory
-    public List<BaseCoin> coins = new List<BaseCoin>(); // Prefab for the coins
+    public List<BaseCoin> coins = new List<BaseCoin>(); // Prefab for the coins and finds which prefabs to spew out. in my case its my two silver and gold coins
     public float spawnInterval = 2f; // Time interval between spawns
     public float spawnRangeX = 8f;    // Range for spawning on the X-axis
     public float spawnRangeY = 4f;    // Range for spawning on the Y-axis

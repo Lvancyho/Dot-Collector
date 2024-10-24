@@ -10,4 +10,6 @@ public class CoinCollector : MonoBehaviour
         /*coinCount++; // Increment the count
         Debug.Log("Coins Collected: " + coinCount); // Display the count in the console*/
     }
+
+    //old console system displaying score
 }

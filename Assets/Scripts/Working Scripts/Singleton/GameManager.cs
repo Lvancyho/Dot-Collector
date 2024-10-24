@@ -39,6 +39,6 @@ public class GameManager : Observer
     public override void Notify(Subject subject)
     {
         currentScore += subject.GetComponent<BaseCoin>().moneyValue;
-        score.text = $"{currentScore}"; //displays your current score
+        score.text = $"{currentScore}"; //displays your current score while calling for the observer
     }
 }

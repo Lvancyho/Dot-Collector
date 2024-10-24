@@ -12,6 +12,8 @@ public class BaseCoin : Subject
     {
         moneyValue = scoreValue;
         coinPrefab = prefab;
+
+        //score and pref used
     }
 
     private void OnEnable()
