@@ -40,3 +40,4 @@ Game Demo Video:
 https://drive.google.com/file/d/1QWVA4q5zIsbR3a-jzDf4e7RXQd1_sLiC/view?usp=sharing Viewable by all Ontario Tech accounts.
 
 Assignment 1 Video Report:
+https://drive.google.com/file/d/1A-ZsYCnzmUd5rq5wdsOrsZiP9BvBoyOl/view?usp=sharing
