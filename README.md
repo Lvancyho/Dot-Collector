@@ -41,3 +41,17 @@ https://drive.google.com/file/d/1QWVA4q5zIsbR3a-jzDf4e7RXQd1_sLiC/view?usp=shari
 
 Assignment 1 Video Report:
 https://drive.google.com/file/d/1A-ZsYCnzmUd5rq5wdsOrsZiP9BvBoyOl/view?usp=sharing Viewable by all Ontario Tech accounts.
+
+Stuff I forgot to mention in the video:
+
+Why the Singleton is useful in my game:
+Overall game manager stuff, it'll also help me determine if the player dies in the future when obstacles are added.
+
+Why the Factory is useful in my game:
+It will help me add more interaction in the game by having a chance at collecting more money overall. If I decide to add more coins such as a bronze coin itll be very simple.
+
+Why the Observer is useful in my game:
+Useful because it can be modified later after creating the code and updates the current score in real time instead of at the end.
+
+Why the Command is useful in my game: 
+Adds more interaction with player customization and useful for navigating UI.
