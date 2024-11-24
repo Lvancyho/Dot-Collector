@@ -22,4 +22,11 @@ public class Player : MonoBehaviour
         // Move the player
         rb.velocity = movement;
     }
+
+    // Public method to update moveDistance
+    public void SetMoveDistance(float newMoveDistance)
+    {
+        moveDistance = newMoveDistance;
+        Debug.Log("Player speed updated to: " + moveDistance);
+    }
 }

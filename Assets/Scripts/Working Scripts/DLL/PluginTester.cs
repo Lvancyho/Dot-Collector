@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -32,7 +31,7 @@ public class PluginTester : MonoBehaviour
                 Debug.Log("CSV file loaded. Number of lines: " + lines.Length);
 
                 string[] headers = lines[0].Split(',');
-                Debug.Log("Language codes found: " + string.Join(", ", headers.Skip(1))); 
+                Debug.Log("Language codes found: " + string.Join(", ", headers.Skip(1)));
 
                 moveDistances = new Dictionary<string, float>();
 
@@ -41,9 +40,8 @@ public class PluginTester : MonoBehaviour
                     string[] columns = lines[i].Split(',');
                     string key = columns[0].Trim();
 
-                    if (key == "moveDistance") 
+                    if (key == "moveDistance")
                     {
-                        
                         for (int j = 1; j < headers.Length; j++)
                         {
                             string languageCode = headers[j].Trim(); // e.g., "en", "es", "fr"
@@ -93,9 +91,13 @@ public class PluginTester : MonoBehaviour
             return;
         }
 
-        // Set the moveDistance in PlayerController based on the language code
-        playerController.moveDistance = moveDistances[languageCode];
-        Debug.Log("Move distance changed to: " + playerController.moveDistance + " for language code: " + languageCode);
+        // Retrieve the new speed from the dictionary
+        float newSpeed = moveDistances[languageCode];
+
+        // Use the Player script's SetMoveDistance method to update speed
+        playerController.SetMoveDistance(newSpeed);
+
+        Debug.Log($"Move distance changed to: {newSpeed} for language code: {languageCode}");
     }
 
     // Method to change the moveDistance when a button is clicked
