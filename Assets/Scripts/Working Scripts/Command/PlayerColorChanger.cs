@@ -8,25 +8,32 @@ public class PlayerColorChanger : MonoBehaviour
     public Button blueButton;
     public SpriteRenderer playerRenderer;
 
-    private ICommand redCommand;
-    private ICommand yellowCommand;
-    private ICommand blueCommand;
+    //makes it so buttons change player color
 
+    // Start is called before the first frame update
     void Start()
     {
-        // Initialize commands
-        redCommand = new ColourChangeCommand(Color.red, playerRenderer);
-        yellowCommand = new ColourChangeCommand(Color.yellow, playerRenderer);
-        blueCommand = new ColourChangeCommand(Color.blue, playerRenderer);
-
-        // Add listeners for buttons
-        redButton.onClick.AddListener(() => ExecuteCommand(redCommand));
-        yellowButton.onClick.AddListener(() => ExecuteCommand(yellowCommand));
-        blueButton.onClick.AddListener(() => ExecuteCommand(blueCommand));
+        // Add listeners for the buttons
+        redButton.onClick.AddListener(SetRedColor);
+        yellowButton.onClick.AddListener(SetYellowColor);
+        blueButton.onClick.AddListener(SetBlueColor);
     }
 
-    void ExecuteCommand(ICommand command)
+    // change to red
+    void SetRedColor()
     {
-        command.Execute();
+        playerRenderer.color = Color.red;
+    }
+
+    // change to yellow
+    void SetYellowColor()
+    {
+        playerRenderer.color = Color.yellow;
+    }
+
+    // change to blue
+    void SetBlueColor()
+    {
+        playerRenderer.color = Color.blue;
     }
 }
