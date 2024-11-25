@@ -1,37 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CoinSpawner : MonoBehaviour
 {
+    public CoinPool coinPool; 
+    public float spawnInterval = 2f; // Time between coin spawns
+    public float spawnRangeX = 8f;
+    public float spawnRangeY = 4f;
 
-    // another singleton but also part of my factory
-    public List<BaseCoin> coins = new List<BaseCoin>(); // Prefab for the coins and finds which prefabs to spew out. in my case its my two silver and gold coins
-    public float spawnInterval = 2f; // Time interval between spawns
-    public float spawnRangeX = 8f;    // Range for spawning on the X-axis
-    public float spawnRangeY = 4f;    // Range for spawning on the Y-axis
-
-    public CoinSpawner instance;
-
-    private void Start()
+    // Randomly spawn a coin from the available types
+    void Start()
     {
-        InvokeRepeating(nameof(SpawnCoin), 0f, spawnInterval); // Start spawning coins
-
-        if (instance != this && instance != null)
-        {
-            Destroy(this);
-        }
-        instance = this;
-
-        //this is the singleton part
+        InvokeRepeating("SpawnCoin", 0f, spawnInterval); // Start spawning coins
     }
 
-    private void SpawnCoin()
+    void SpawnCoin()
     {
-        int coinType = Random.Range(0, coins.Count);
+        Vector3 spawnPosition = new Vector3(Random.Range(-8f, 8f), Random.Range(-4f, 4f)); // Random spawn position
 
-        // spawns at a random position between x and -x
-        Vector2 spawnPosition = new Vector2(Random.Range(-spawnRangeX, spawnRangeX), Random.Range(-spawnRangeY, spawnRangeY));
-        Instantiate(coins[coinType].coinPrefab, spawnPosition, Quaternion.identity);
+        // Randomly choose a coin prefab from the pool
+        int coinIndex = Random.Range(0, coinPool.coinPrefabs.Length);
+        GameObject coinPrefab = coinPool.coinPrefabs[coinIndex]; // Get the coin prefab based on the random index
+
+        GameObject coin = coinPool.GetCoin(coinPrefab); // Get the selected coin from the pool
+        coin.transform.position = spawnPosition; // Set the coins spawn position
     }
 }

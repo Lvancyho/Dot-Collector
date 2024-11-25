@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5272166906394601369}
   - component: {fileID: 2315227994037979499}
   - component: {fileID: 3010145145040458594}
+  - component: {fileID: -7274004602284986835}
   m_Layer: 0
   m_Name: Golden Coin
   m_TagString: Untagged
@@ -116,4 +117,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moneyValue: 10
   Type: Gold
+  coinPrefab: {fileID: 5300418020859735660}
+--- !u!114 &-7274004602284986835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5300418020859735660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee1d30fa95055d5449e143c18e699c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPool: {fileID: 0}
   coinPrefab: {fileID: 5300418020859735660}
