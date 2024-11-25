@@ -63,18 +63,20 @@ FINAL STUFF:
 Game Design Pattern Improvements:
 Command Design Pattern -> Originally wasn't the actual design pattern implementation but was the correct idea. 
 Factory Design Pattern -> Tinkered to be able to implement object pooling
-insert screenshot here explaining later
 
 Optimization of a Game Design Pattern:
 Optimized Factory with Object Pooling. It was the first thing I could think of when thinking about optimizations within my game and probably the best choice due to the game revolving around coins.
-insert screenshot here explaining later
 
 DLL Implementation:
 Made it so the player would be able to choose how fast they want to have the game go. Gives the game more juice and one of the few ways I could think of to implement a DLL.
-insert screenshot here explaining later
 
 Profiling:
-insert screenshots here
+CPU usage increased due to EditorLoop overhead. Memory usage dropped by 40 MB, but GC memory increased slightly
+
+![image](https://github.com/user-attachments/assets/176b4fb8-9208-433c-a6a8-ed57118923b3)
+
 
 Anything else I forgot to mention:
+
+Final Project Video Report:
 
