@@ -7,7 +7,7 @@ Roles & Responsibilities:
 Responsible for all things within the project of Dot Collector
 
 Precentage of all work:
-100% from Ivan with some help from Jeffry for the factory design pattery. I was able to create the coins on my own but realized that the way I implemented it wasn't necessarily the factory design pattern taking place so Jeffry helped me out by explaining it and creating the parent class for the coins while I made the child classes. I also had to look into my old projects to refresh my memory on some useful lines of code such as my first year GDW game for listeners for observers and button mapping.
+100% from Ivan with some help from Jeffry for the factory design pattery, Gabe for the Command explanation and class materials for the DLL. I was able to create the coins on my own but realized that the way I implemented it wasn't necessarily the factory design pattern taking place so Jeffry helped me out by explaining it and creating the parent class for the coins while I made the child classes. I also had to look into my old projects to refresh my memory on some useful lines of code such as my first year GDW game for listeners for observers and button mapping.
 
 Explanation of what was done and how it was done:
 I made the game Dot Collector by implementing the design patterns, singleton, factory, observer and command.
@@ -57,3 +57,24 @@ Why the Command is useful in my game:
 Adds more interaction with player customization and useful for navigating UI.
 
 ![image](https://github.com/user-attachments/assets/486b9201-77d1-4ded-813f-680619eac209)
+
+FINAL STUFF:
+
+Game Design Pattern Improvements:
+Command Design Pattern -> Originally wasn't the actual design pattern implementation but was the correct idea. 
+Factory Design Pattern -> Tinkered to be able to implement object pooling
+insert screenshot here explaining later
+
+Optimization of a Game Design Pattern:
+Optimized Factory with Object Pooling. It was the first thing I could think of when thinking about optimizations within my game and probably the best choice due to the game revolving around coins.
+insert screenshot here explaining later
+
+DLL Implementation:
+Made it so the player would be able to choose how fast they want to have the game go. Gives the game more juice and one of the few ways I could think of to implement a DLL.
+insert screenshot here explaining later
+
+Profiling:
+insert screenshots here
+
+Anything else I forgot to mention:
+
