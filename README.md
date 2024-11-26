@@ -77,6 +77,7 @@ Profiling:
 CPU usage increased due to EditorLoop overhead. Memory usage dropped by 40 MB, but GC memory increased slightly
 
 Flowchart:
+
 ![image](https://github.com/user-attachments/assets/176b4fb8-9208-433c-a6a8-ed57118923b3)
 
 
