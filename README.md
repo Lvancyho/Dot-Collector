@@ -67,7 +67,7 @@ Why it's important? Needed to get a better understanding of the design patterns 
 
 Optimization of a Game Design Pattern:
 Optimized Factory with Object Pooling.
-Why it's important? It was the first thing I could think of when thinking about optimizations within my game and probably the best choice due to the game revolving around coins to help save computer usage.
+Why it's important? It was the first thing I could think of when thinking about optimizations within my game and probably the best choice due to the game revolving around coins to help save computer usage. While it doesn't optimize my project a whole lot currently, if I were to make modifications later down the road, it would heavily impact the project as it would be a bigger scale.
 
 DLL Implementation:
 Made it so the player would be able to choose how fast they want to have the game go. Gives the game more juice and one of the few ways I could think of to implement a DLL.
