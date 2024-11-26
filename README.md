@@ -63,20 +63,26 @@ FINAL STUFF:
 Game Design Pattern Improvements:
 Command Design Pattern -> Originally wasn't the actual design pattern implementation but was the correct idea. 
 Factory Design Pattern -> Tinkered to be able to implement object pooling
+Why it's important? Needed to get a better understanding of the design patterns and this helps with functionality and flow of the game.
 
 Optimization of a Game Design Pattern:
-Optimized Factory with Object Pooling. It was the first thing I could think of when thinking about optimizations within my game and probably the best choice due to the game revolving around coins.
+Optimized Factory with Object Pooling.
+Why it's important? It was the first thing I could think of when thinking about optimizations within my game and probably the best choice due to the game revolving around coins to help save computer usage.
 
 DLL Implementation:
 Made it so the player would be able to choose how fast they want to have the game go. Gives the game more juice and one of the few ways I could think of to implement a DLL.
+Why it's important? Helps move work from one project to another so if I wanted to implement player movement into another game it's pretty simple.
 
 Profiling:
 CPU usage increased due to EditorLoop overhead. Memory usage dropped by 40 MB, but GC memory increased slightly
 
+Flowchart:
 ![image](https://github.com/user-attachments/assets/176b4fb8-9208-433c-a6a8-ed57118923b3)
 
 
 Anything else I forgot to mention:
 
+
 Final Project Video Report:
+https://drive.google.com/file/d/1xVPo8xJJnPoCX6TffTb6pNylUyzO_Kvu/view?usp=sharing Viewable by all Ontario Tech accounts.
 
